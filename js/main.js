@@ -12,3 +12,11 @@ function hide(){
 function show(){
   $('.jumbotron').slideDown();
 }
+$(document).ready(function() {
+  $('.jumbotron').on('mouseenter',highlight);
+  $('.jumbotron').on('mouseleave',unhighlight);
+  $('.buttonhide').on('click',hide);
+  $('.buttonshow').on('click',show);
+});
+$('.buttonhide').text('Hide');
+$('.buttonshow').text('show');
