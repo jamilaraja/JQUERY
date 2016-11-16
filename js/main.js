@@ -3,5 +3,9 @@ function highlight(){
   $('.jumbotron').addClass('highlight');
 }
 function unhighlight(){
-  
+  $('h1').text('Hello, world');
+  $('.jumbotron').removeClass('highlight');
+
+
+
 }
